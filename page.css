@@ -1,0 +1,22 @@
+.container {
+}
+
+.header {
+  background-color: #678c93;
+}
+
+#dateSelector {
+  margin-top: 10px;
+}
+
+#dateSubmit {
+  margin-top: 2px;
+}
+
+#dateForm {
+  margin-top: 10px;
+}
+
+#dateButton {
+  margin-top: 10px;
+}
