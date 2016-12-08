@@ -25,7 +25,7 @@ $count = 0;
         
 	$query = mysqli_query($db, $sql);
         if(!$query){
-            echo die(mysqli_error($db);
+            echo die(mysqli_error($db));
 	}
 	}
     }
