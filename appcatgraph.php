@@ -1,6 +1,6 @@
 <?php // content="text/plain; charset=utf-8"
-require_once ('/var/www/html/moodle/BB/jpgraph/src/jpgraph.php');
-require_once ('/var/www/html/moodle/BB/jpgraph/src/jpgraph_bar.php');
+require_once ('./jpgraph/jpgraph.php');
+require_once ('./jpgraph/jpgraph_bar.php');
 
 $datay=array(3003,2989,1945,1539,1429,751);
 $xaxisarr=array('Common App','Recommenders','Account Access','General Question','Submission','My Colleges');

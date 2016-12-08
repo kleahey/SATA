@@ -1,6 +1,6 @@
 <?php // content="text/plain; charset=utf-8"
-require_once ('/var/www/html/moodle/BB/jpgraph/src/jpgraph.php');
-require_once ('/var/www/html/moodle/BB/jpgraph/src/jpgraph_bar.php');
+require_once ('./jpgraph/jpgraph.php');
+require_once ('./jpgraph/jpgraph_bar.php');
 
 $datay=array(2872,1018,979,932,816,427);
 $xaxisarr=array('Uploading Documents','Question About App','Account Access','Students','Submitting Form','Question from Applicant');

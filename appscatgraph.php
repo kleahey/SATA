@@ -1,6 +1,6 @@
 <?php // content="text/plain; charset=utf-8"
-require_once ('/var/www/html/moodle/BB/jpgraph/src/jpgraph.php');
-require_once ('/var/www/html/moodle/BB/jpgraph/src/jpgraph_bar.php');
+require_once ('./jpgraph/jpgraph.php');
+require_once ('./jpgraph/jpgraph_bar.php');
 
 $datay=array(4511,4457,446,406,376,355);
 $xaxisarr=array('General Question','Unspecified','PDF Preview','Other Rec Question','Testing','Assigned to PS');
