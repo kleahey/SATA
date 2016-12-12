@@ -68,14 +68,16 @@
     	         $query = mysqli_query($db, $sql);
 
                if(!$query){
-                 echo die(mysqli_error($db));
+                 echo mysqli_error($db);
+                 echo ".";
+                 break;
     	         }
             }
          }
          if (mysqli_affected_rows($db) > 0) {
-           echo "Success!";
+           echo "Success! Your file has been uploaded and data has been added to the database.";
          } else {
-           echo "Fail";
+           echo " Your upload has failed.  Please correct the errors and try again.";
          }
      fclose($handle);
   }
@@ -126,5 +128,21 @@
 	   </form>
         </div>
      </div>
+     <div class="container-fluid">
+     <div class="col-md-2 col-md-offset-5 text-center"></br></br>
+   		<!-- The data encoding type, enctype, MUST be specified as below -->
+   		<form enctype="multipart/form-data" action="fileupload.php" method="POST">
+   			<div class="form-group">
+       			<!-- MAX_FILE_SIZE must precede the file input field -->
+       			<label for="inputFile">Send this file:</label>
+   			<input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+       			<!-- Name of input element determines name in $_FILES array -->
+       			<input type="file" id="inputFile" name="userfile" />
+   			<p class="help-block">The system will only accept .CSV files up to 300kb.</p>
+   			</div>
+       			<input type="submit" class="btn btn-default" value="Send File" />
+   		</form>
+   	</div>
+    </div>
      </body>
 </html>
